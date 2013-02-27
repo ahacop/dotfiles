@@ -1,12 +1,38 @@
 [user]
 	name = ahacop
-  email = ahacop@server.fake
+	email = ahacop@server.fake
+
+[credential]
+	helper = osxkeychain
+
 [github]
   user = ahacop
+
 [color]
-  ui = auto
-  diff = auto
-  status = auto
-  branch = auto
+  ui          = auto
+  diff        = auto
+  status      = auto
+  branch      = auto
   interactive = auto
-  grep = auto
+  grep        = auto
+
+[alias]
+  st    = status
+  ci    = commit
+  br    = branch
+  co    = checkout
+  df    = diff
+  lg    = log -p
+  dc    = diff --cached
+  amend = commit --amend
+  aa    = add --all
+  fa    = fetch --all
+  pom   = push origin master
+  dh1   = diff HEAD~1
+
+  # Divergence (commits we added and commits remote added)
+  div = divergence
+
+  # Goodness (summary of diff lines added/removed/total)
+  gn  = goodness
+  gnc = goodness --cached
