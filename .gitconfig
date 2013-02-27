@@ -1,0 +1,12 @@
+[user]
+	name = ahacop
+  email = arahacopian@gmail.com
+[github]
+  user = ahacop
+[color]
+  ui = auto
+  diff = auto
+  status = auto
+  branch = auto
+  interactive = auto
+  grep = auto
