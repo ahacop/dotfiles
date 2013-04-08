@@ -1,6 +1,6 @@
 [user]
-	name = ahacop
-	email = ahacop@server.fake
+	name  = ahacop
+	email = ara@smartlogicsolutions.com
 
 [credential]
 	helper = osxkeychain
@@ -17,18 +17,23 @@
   grep        = auto
 
 [alias]
-  st    = status
-  ci    = commit
-  br    = branch
-  co    = checkout
-  df    = diff
-  lg    = log -p
-  dc    = diff --cached
-  amend = commit --amend
-  aa    = add --all
-  fa    = fetch --all
-  pom   = push origin master
-  dh1   = diff HEAD~1
+  aa     = add --all
+  amend  = commit --amend
+  b      = branch
+  ci     = commit
+  co     = checkout
+  dc     = diff --cached
+  df     = diff
+  dh1    = diff HEAD~1
+  di     = diff
+  ds     = diff --stat        = 160,120
+  fa     = fetch --all
+  ff     = merge --ff-only
+  lg     = log -p
+  noff   = merge --no-ff
+  pom    = push origin master
+  pullff = pull --ff-only
+  st     = status
 
   # Divergence (commits we added and commits remote added)
   div = divergence
@@ -36,3 +41,21 @@
   # Goodness (summary of diff lines added/removed/total)
   gn  = goodness
   gnc = goodness --cached
+
+  # Fancy logging.
+  #   h  = head
+  #   hp = head with patch
+  #   r  = recent commits, only current branch
+  #   ra = recent commits, all reachable refs
+  #   l  = all commits, only current branch
+  #   la = all commits, all reachable refs
+  head = !git l -1
+  h    = !git head
+  hp   = "!. ~/.githelpers && show_git_head"
+  r    = !git l -30
+  ra   = !git r --all
+  l    = "!. ~/.githelpers && pretty_git_log"
+  la   = !git l --all
+
+[merge]
+    tool = vimdiff
