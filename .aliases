@@ -1,2 +1,3 @@
-alias vi='mvim'
+alias vi='vim'
+alias be='bundle exec'
 alias ls='ls -F'

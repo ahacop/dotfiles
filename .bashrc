@@ -11,3 +11,4 @@ export PATH=/Users/ahacop/bin:$PATH
 
 source ~/.git-completion.bash
 source ~/.git-prompt.sh
+source ~/.aliases
