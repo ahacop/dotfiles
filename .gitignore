@@ -19,3 +19,6 @@
 .zshrc
 .lesshst
 *.swp
+.powrc
+.rvmrc
+tmp
