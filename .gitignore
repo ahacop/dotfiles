@@ -22,3 +22,5 @@
 .powrc
 .rvmrc
 tmp
+.powenv
+.rspec
