@@ -4,6 +4,7 @@
 !.git-*
 !.login
 !.*
+.ruby-version
 .CFUserTextEncoding
 .DS_Store
 .Xauthority
