@@ -14,3 +14,5 @@ export EDITOR=vim
 source ~/.git-completion.bash
 source ~/.git-prompt.sh
 source ~/.aliases
+
+HISTCONTROL=ignoreboth
