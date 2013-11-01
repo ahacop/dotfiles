@@ -19,7 +19,7 @@
 [alias]
   aa     = add --all
   amend  = commit --amend
-  b      = branch
+  br     = branch
   ci     = commit
   co     = checkout
   dc     = diff --cached
