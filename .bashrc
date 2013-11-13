@@ -15,7 +15,11 @@ source ~/.git-completion.bash
 source ~/.git-prompt.sh
 source ~/.aliases
 
-HISTCONTROL=ignoreboth
+export HISTCONTROL=ignoreboth
+export HISTSIZE=10000
+export HISTFILESIZE=20000
+shopt -s histappend
+export PROMPT_COMMAND='history -a'
 
 function g {
   if [[ $# > 0 ]]; then
