@@ -16,3 +16,15 @@ source ~/.git-prompt.sh
 source ~/.aliases
 
 HISTCONTROL=ignoreboth
+
+function g {
+  if [[ $# > 0 ]]; then
+    git $@
+  else
+    git status
+  fi
+}
+
+function git_st {
+  echo "Use g" && git st
+}
