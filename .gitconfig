@@ -56,6 +56,8 @@
   ra   = !git r --all
   l    = "!. ~/.githelpers && pretty_git_log"
   la   = !git l --all
+	today = log --since=midnight --author='ahacop' --oneline
+	yesterday = log --since=midnight.yesterday --until=midnight --author='ahacop' --oneline
 
 [merge]
     tool = vimdiff
