@@ -36,3 +36,6 @@ function git_st {
 function gitvim {
   vim -p $(git st --short | awk ' { print $2 } ')
 }
+
+source /usr/local/opt/chruby/share/chruby/chruby.sh
+RUBIES=(~/.rvm/rubies/*)
