@@ -1,6 +1,6 @@
 [user]
-	name  = ahacop
-	email = ara@smartlogic.io
+  name  = ahacop
+  email = ara@smartlogic.io
 
 [credential]
 	helper = osxkeychain
@@ -60,7 +60,7 @@
 	yesterday = log --since=midnight.yesterday --until=midnight --author='ahacop' --oneline
 
 [merge]
-    tool = vimdiff
+  tool = vimdiff
 [push]
 	default = simple
 [core]
