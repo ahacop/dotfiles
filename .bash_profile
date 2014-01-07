@@ -1,4 +1,3 @@
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 [[ -s /Users/ahacop/.nvm/nvm.sh ]] && . /Users/ahacop/.nvm/nvm.sh # This loads NVM
 if [ -z "$SSH_AUTH_SOCK" ]; then
     if [ -e "$HOME/.ssh/id_rsa" ]; then
@@ -9,3 +8,5 @@ if [ -z "$SSH_AUTH_SOCK" ]; then
        . $HOME/.keychain/$HOSTNAME-sh
 fi
 source ~/.bashrc
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*

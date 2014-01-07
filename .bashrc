@@ -1,5 +1,3 @@
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-
 ### Added by the Heroku Toolbelt
 VIM=$HOME/.vim
 VIMRUNTIME=$HOME/.vim
@@ -37,5 +35,5 @@ function gitvim {
   vim -p $(git st --short | awk ' { print $2 } ')
 }
 
-source /usr/local/opt/chruby/share/chruby/chruby.sh
-RUBIES=(~/.rvm/rubies/*)
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
