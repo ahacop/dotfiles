@@ -35,5 +35,6 @@ function gitvim {
   vim -p $(git st --short | awk ' { print $2 } ')
 }
 
+export PGHOST=localhost
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
