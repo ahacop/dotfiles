@@ -13,6 +13,7 @@
 #    3a) Change your PS1 to call __git_ps1 as
 #        command-substitution:
 #        Bash: PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
+PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
 #        ZSH:  setopt PROMPT_SUBST ; PS1='[%n@%m %c$(__git_ps1 " (%s)")]\$ '
 #        the optional argument will be used as format string.
 #    3b) Alternatively, for a slightly faster prompt, __git_ps1 can
@@ -39,11 +40,12 @@
 # unstaged (*) and staged (+) changes will be shown next to the branch
 # name.  You can configure this per-repository with the
 # bash.showDirtyState variable, which defaults to true once
-# GIT_PS1_SHOWDIRTYSTATE is enabled.
+GIT_PS1_SHOWDIRTYSTATE=1
 #
 # You can also see if currently something is stashed, by setting
 # GIT_PS1_SHOWSTASHSTATE to a nonempty value. If something is stashed,
 # then a '$' will be shown next to the branch name.
+GIT_PS1_SHOWSTASHSTATE=1
 #
 # If you would like to see if there're untracked files, then you can set
 # GIT_PS1_SHOWUNTRACKEDFILES to a nonempty value. If there're untracked
@@ -51,6 +53,7 @@
 # configure this per-repository with the bash.showUntrackedFiles
 # variable, which defaults to true once GIT_PS1_SHOWUNTRACKEDFILES is
 # enabled.
+GIT_PS1_SHOWUNTRACKEDFILES=1
 #
 # If you would like to see the difference between HEAD and its upstream,
 # set GIT_PS1_SHOWUPSTREAM="auto".  A "<" indicates you are behind, ">"
@@ -58,6 +61,7 @@
 # indicates that there is no difference. You can further control
 # behaviour by setting GIT_PS1_SHOWUPSTREAM to a space-separated list
 # of values:
+GIT_PS1_SHOWUPSTREAM="auto"
 #
 #     verbose       show number of commits ahead/behind (+/-) upstream
 #     name          if verbose, then also show the upstream abbrev name
@@ -84,6 +88,7 @@
 # GIT_PS1_SHOWCOLORHINTS to a nonempty value. The colors are based on
 # the colored output of "git status -sb" and are available only when
 # using __git_ps1 for PROMPT_COMMAND or precmd.
+GIT_PS1_SHOWCOLORHINTS=1
 
 # check whether printf supports -v
 __git_printf_supports_v=
