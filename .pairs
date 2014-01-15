@@ -1,0 +1,15 @@
+pairs:
+  ah: Ara Hacopian; ara
+  tvs: Tom von Schwerdtner; tom
+  po: Paul Ostazeski; paul
+  sg: Sam Goldman; sam
+  cl: Carlos Lalimarmo; carlos
+  mm: Matt Menefee; matt
+  rd: Ryan DeStefano; ryan
+  di: Dan Ivovich; dan
+  eo: Eric Oestrich; eric
+  bs: Brian Sierakowski; brian
+email:
+  prefix: dev
+  domain: smartlogic.io
+  no_solo_prefix: true

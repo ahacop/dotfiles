@@ -1,6 +1,7 @@
 [user]
-  name  = ahacop
-  email = ara@smartlogic.io
+	name = Ara Hacopian
+	email = ara@smartlogic.io
+	initials = ah
 
 [credential]
 	helper = osxkeychain
