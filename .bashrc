@@ -7,6 +7,8 @@ export PATH="/usr/local/share/npm/bin:$PATH"
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 export PATH=/Users/ahacop/bin:$PATH
 export PATH=./bin:$PATH
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
 export EDITOR=vim
 
 source ~/.git-completion.bash
