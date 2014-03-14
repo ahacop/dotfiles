@@ -38,5 +38,3 @@ function gitvim {
 }
 
 export PGHOST=localhost
-
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
