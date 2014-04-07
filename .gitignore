@@ -21,7 +21,6 @@ tags
 .zshrc
 .lesshst
 *.swp
-.powrc
 .rvmrc
 tmp
 .powenv
