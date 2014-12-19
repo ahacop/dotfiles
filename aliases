@@ -18,3 +18,4 @@ alias rst='powify server stop && rbd && echo "Seeding..." && ts && powify server
 alias v='pushd ~/.vim'
 alias tw='find . ! -path "./.git/*" ! -path "./tmp/*" ! -path "./public/*" ! -path "./log/*" -type f -exec egrep -l " +$" {} \;'
 alias tat='tmux attach -t `basename $PWD` || tmux new-session -As "$(basename "$PWD" | tr . -)"'
+alias bu='brew update && brew upgrade && brew cask update && brew cleanup'
