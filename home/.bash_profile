@@ -6,4 +6,7 @@ if [ -z "$SSH_AUTH_SOCK" ]; then
     [ -f $HOME/.keychain/$HOSTNAME-sh ] && \
        . $HOME/.keychain/$HOSTNAME-sh
 fi
-source ~/.bashrc
+
+if [ -f ~/.bashrc ]; then
+  source ~/.bashrc
+fi
