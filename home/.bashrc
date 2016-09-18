@@ -29,10 +29,6 @@ function g {
   fi
 }
 
-function git_st {
-  echo "Use g" && git st
-}
-
 function gitvim {
   vim -p $(git st --short | awk ' { print $2 } ')
 }
