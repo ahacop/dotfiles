@@ -1,4 +1,3 @@
-[[ -s /Users/ahacop/.nvm/nvm.sh ]] && . /Users/ahacop/.nvm/nvm.sh # This loads NVM
 if [ -z "$SSH_AUTH_SOCK" ]; then
     if [ -e "$HOME/.ssh/id_rsa" ]; then
         keychain --quick --inherit any --agents ssh id_rsa
