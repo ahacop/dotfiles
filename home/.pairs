@@ -1,13 +1,7 @@
 pairs:
   ah: Ara Hacopian; ara
-  sg: Sam Goldman; sam
-  cl: Carlos Lalimarmo; carlos
-  mm: Matt Menefee; matt
-  rd: Ryan DeStefano; ryan
-  di: Dan Ivovich; dan
-  eo: Eric Oestrich; eric
   bs: Brian Sierakowski; brian
 email:
   prefix: dev
-  domain: smartlogic.io
+  domain: example.com
   no_solo_prefix: true
