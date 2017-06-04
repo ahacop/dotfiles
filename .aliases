@@ -1,5 +1,5 @@
 alias vi='vim'
-alias ls='ls -G'
+alias ls='ls -GF'
 alias be='bundle exec'
 alias gc='git ci -p'
 alias gci='echo "Use gc!!!" && git ci -p'
