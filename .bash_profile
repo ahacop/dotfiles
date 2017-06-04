@@ -11,4 +11,35 @@ if [ -z "$SSH_AUTH_SOCK" ]; then
        . $HOME/.keychain/$HOSTNAME-sh
 fi
 
-export PATH="$HOME/.fastlane/bin:$PATH"
+function g {
+  if [[ $# > 0 ]]; then
+    git $@
+  else
+    git status
+  fi
+}
+
+function gitvim {
+  vim -p $(git st --short | awk ' { print $2 } ')
+}
+
+_apex()  {
+  COMPREPLY=()
+  local cur="${COMP_WORDS[COMP_CWORD]}"
+  local opts="$(apex autocomplete -- ${COMP_WORDS[@]:1})"
+  COMPREPLY=( $(compgen -W "${opts}" -- ${cur}) )
+  return 0
+}
+
+complete -F _apex apex
+
+export HISTCONTROL=ignoreboth
+export HISTSIZE=10000
+export HISTFILESIZE=20000
+shopt -s histappend
+
+source ~/bin/git-completion.bash
+source ~/bin/git-prompt.sh
+source ~/.aliases
+
+eval "$(direnv hook bash)"
