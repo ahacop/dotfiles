@@ -3,6 +3,8 @@ VIM=$HOME/.vim
 VIMRUNTIME=$HOME/.vim
 export PATH="/usr/local/heroku/bin:$PATH"
 
+export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"
+export PATH="$JAVA_HOME/bin:$PATH"
 export PATH="/usr/local/share/npm/bin:$PATH"
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 export PATH=/Users/ahacop/bin:$PATH
@@ -39,3 +41,7 @@ export PGHOST=localhost
 [[ -e /usr/local/opt/chruby/share/chruby/auto.sh ]] && source /usr/local/opt/chruby/share/chruby/auto.sh
 [[ -e /usr/local/share/chruby/chruby.sh ]] && source /usr/local/share/chruby/chruby.sh
 [[ -e /usr/local/share/chruby/auto.sh ]] && source /usr/local/share/chruby/auto.sh
+
+export ANDROID_HOME=~/Library/Android/sdk
+export PATH=${PATH}:${ANDROID_HOME}/tools
+export PATH=${PATH}:${ANDROID_HOME}/platform-tools
