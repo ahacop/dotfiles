@@ -13,8 +13,8 @@ export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 export EDITOR=vim
 
-source ~/.git-completion.bash
-source ~/.git-prompt.sh
+source ~/bin/git-completion.bash
+source ~/bin/git-prompt.sh
 source ~/.aliases
 
 export HISTCONTROL=ignoreboth
