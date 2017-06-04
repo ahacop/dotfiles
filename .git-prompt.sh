@@ -13,7 +13,6 @@
 #    3a) Change your PS1 to call __git_ps1 as
 #        command-substitution:
 #        Bash: PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
-PS1='[\u|\W$(__git_ps1 " (%s)")]\$ '
 #        ZSH:  setopt PROMPT_SUBST ; PS1='[%n@%m %c$(__git_ps1 " (%s)")]\$ '
 #        the optional argument will be used as format string.
 #    3b) Alternatively, for a slightly faster prompt, __git_ps1 can
@@ -30,6 +29,8 @@ PS1='[\u|\W$(__git_ps1 " (%s)")]\$ '
 #          followed by colon, cwd, dollar and SP, as your prompt.
 #        Optionally, you can supply a third argument with a printf
 #        format string to finetune the output of the branch status
+# PS1='[\u|\W$(__git_ps1 " (%s)")]\$ '
+PROMPT_COMMAND='__git_ps1 "[\u|\W" "]\$ "'
 #
 # The repository status will be displayed only if you are currently in a
 # git repository. The %s token is the placeholder for the shown status.
