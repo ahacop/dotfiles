@@ -1,3 +1,7 @@
+if [ -f ~/.bashrc ]; then
+  source ~/.bashrc
+fi
+
 if [ -z "$SSH_AUTH_SOCK" ]; then
     if [ -e "$HOME/.ssh/id_rsa" ]; then
         keychain --quick --inherit any --agents ssh id_rsa
@@ -7,7 +11,4 @@ if [ -z "$SSH_AUTH_SOCK" ]; then
        . $HOME/.keychain/$HOSTNAME-sh
 fi
 
-if [ -f ~/.bashrc ]; then
-  source ~/.bashrc
-fi
 export PATH="$HOME/.fastlane/bin:$PATH"
