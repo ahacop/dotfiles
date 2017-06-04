@@ -1,6 +1,6 @@
 alias vi='vim'
+alias ls='ls -G'
 alias be='bundle exec'
-alias ls='ls -F'
 alias gc='git ci -p'
 alias gci='echo "Use gc!!!" && git ci -p'
 alias gca='git ci -p --amend'
