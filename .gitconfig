@@ -9,14 +9,6 @@
 [github]
   user = ahacop
 
-[color]
-  ui = true
-  diff        = auto
-  status      = auto
-  branch      = auto
-  interactive = auto
-  grep        = auto
-
 [alias]
   aa     = add --all
   amend  = commit --amend
