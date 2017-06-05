@@ -23,6 +23,10 @@ function gitvim {
   vim -p $(git st --short | awk ' { print $2 } ')
 }
 
+function finderPlistView {
+  /usr/libexec/PlistBuddy -c "Print $1" $HOME/Library/Preferences/com.apple.finder.plist
+}
+
 _apex()  {
   COMPREPLY=()
   local cur="${COMP_WORDS[COMP_CWORD]}"
