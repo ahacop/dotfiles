@@ -33,6 +33,10 @@ _apex()  {
 
 complete -F _apex apex
 
+VIM=$HOME/.vim
+VIMRUNTIME=$HOME/.vim
+export EDITOR=vim
+
 export HISTCONTROL=ignoreboth
 export HISTSIZE=10000
 export HISTFILESIZE=20000

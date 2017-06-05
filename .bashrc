@@ -1,7 +1,3 @@
-VIM=$HOME/.vim
-VIMRUNTIME=$HOME/.vim
-export EDITOR=vim
-
 export PGHOST=localhost
 export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"
 export ANDROID_HOME=$HOME/Library/Android/sdk
