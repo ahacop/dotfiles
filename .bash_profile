@@ -27,6 +27,14 @@ function finderPlistView {
   /usr/libexec/PlistBuddy -c "Print $1" $HOME/Library/Preferences/com.apple.finder.plist
 }
 
+# Switch projects
+function p() {
+  proj=$(find ~/code -maxdepth 2 -type d | selecta)
+  if [[ -n "$proj" ]]; then
+    cd $proj
+  fi
+}
+
 _apex()  {
   COMPREPLY=()
   local cur="${COMP_WORDS[COMP_CWORD]}"
