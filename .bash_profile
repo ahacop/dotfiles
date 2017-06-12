@@ -57,6 +57,7 @@ shopt -s histappend
 source ~/bin/git-completion.bash
 source ~/bin/git-prompt.sh
 source ~/.aliases
+source ~/.functions
 
 eval "$(direnv hook bash)"
 
