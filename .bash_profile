@@ -11,40 +11,6 @@ if [ -z "$SSH_AUTH_SOCK" ]; then
        . $HOME/.keychain/$HOSTNAME-sh
 fi
 
-function g {
-  if [[ $# > 0 ]]; then
-    git $@
-  else
-    git status
-  fi
-}
-
-function gitvim {
-  vim -p $(git st --short | awk ' { print $2 } ')
-}
-
-function finderPlistView {
-  /usr/libexec/PlistBuddy -c "Print $1" $HOME/Library/Preferences/com.apple.finder.plist
-}
-
-# Switch projects
-function p() {
-  proj=$(find ~/code -maxdepth 2 -type d | selecta)
-  if [[ -n "$proj" ]]; then
-    cd $proj
-  fi
-}
-
-_apex()  {
-  COMPREPLY=()
-  local cur="${COMP_WORDS[COMP_CWORD]}"
-  local opts="$(apex autocomplete -- ${COMP_WORDS[@]:1})"
-  COMPREPLY=( $(compgen -W "${opts}" -- ${cur}) )
-  return 0
-}
-
-complete -F _apex apex
-
 VIM=$HOME/.vim
 VIMRUNTIME=$HOME/.vim
 export EDITOR=vim
