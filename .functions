@@ -161,8 +161,12 @@ g() {
   fi
 }
 
-gitvim() {
-  vim -p $(git st --short | awk ' { print $2 } ')
+open_modified_and_untracked_in_vim() {
+  vim -p $(git ls-files . --exclude-standard --others --modified)
+}
+
+open_changed_from_head_in_vim() {
+  vim -p $(git diff-tree --no-commit-id --name-only -r HEAD $1)
 }
 
 finderPlistView() {
