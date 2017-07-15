@@ -2,6 +2,8 @@ export PGHOST=localhost
 export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"
 export ANDROID_HOME=$HOME/Library/Android/sdk
 
+export PATH=$PATH:/usr/local/opt/go/libexec/bin
+export PATH=$PATH:$HOME/go/bin
 export PATH=${PATH}:${ANDROID_HOME}/tools
 export PATH=${PATH}:${ANDROID_HOME}/platform-tools
 export PATH=$HOME/.fastlane/bin:$PATH
