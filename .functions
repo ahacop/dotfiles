@@ -161,12 +161,20 @@ g() {
   fi
 }
 
+modified_and_untracked_files() {
+  git ls-files . --exclude-standard --others --modified
+}
+
 open_modified_and_untracked_in_vim() {
-  vim -p $(git ls-files . --exclude-standard --others --modified)
+  vim -p $(modified_and_untracked_files)
+}
+
+changed_from_head() {
+  git diff-tree --no-commit-id --name-only -r HEAD $1
 }
 
 open_changed_from_head_in_vim() {
-  vim -p $(git diff-tree --no-commit-id --name-only -r HEAD $1)
+  vim -p $(changed_from_head "$1")
 }
 
 finderPlistView() {
