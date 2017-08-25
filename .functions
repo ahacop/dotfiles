@@ -197,3 +197,8 @@ _apex()  {
   return 0
 }
 complete -F _apex apex
+
+# $ reencode_pdf (screen|ebook|printer|prepress) input.pdf output.pdf
+reencode_pdf() {
+  gs -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/$1 -sOutputFile=$3 $2
+}
