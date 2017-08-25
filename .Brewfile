@@ -139,6 +139,5 @@ mas "Deckset", id: 847496013
 mas "GarageBand", id: 682658836
 mas "Harvest", id: 506189836
 mas "Pocket", id: 568494494
-mas "Slack", id: 803453959
 mas "The Unarchiver", id: 425424353
 mas "Xcode", id: 497799835
