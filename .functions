@@ -202,3 +202,7 @@ complete -F _apex apex
 reencode_pdf() {
   gs -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/$1 -sOutputFile=$3 $2
 }
+
+remove_gb_wm() {
+  convert -gravity SouthEast -region 160x35 -morphology dilate disk +noise Uniform $1 $2
+}
