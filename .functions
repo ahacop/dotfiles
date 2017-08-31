@@ -206,3 +206,8 @@ reencode_pdf() {
 remove_gb_wm() {
   convert -gravity SouthEast -region 160x35 -morphology dilate disk +noise Uniform $1 $2
 }
+
+# get random year for vpca
+random_vpca_year() {
+  ruby -e 'puts (1980..1999).to_a.sample'
+}
