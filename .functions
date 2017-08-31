@@ -183,7 +183,7 @@ finderPlistView() {
 
 # Switch projects
 p() {
-  proj=$(find ~/code -maxdepth 2 -type d | selecta)
+  proj=$(find ~/code -maxdepth 2 \( -type l -o -type d \) | selecta)
   if [[ -n "$proj" ]]; then
     cd $proj
   fi
