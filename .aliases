@@ -20,3 +20,4 @@ alias tw='find . ! -path "./.git/*" ! -path "./tmp/*" ! -path "./public/*" ! -pa
 alias tat='tmux attach -t `basename $PWD` || tmux new-session -As "$(basename "$PWD" | tr . -)"'
 alias bu='brew update && brew upgrade && brew cleanup'
 alias google='googler --count 3 --noua -c com -l en'
+alias germ='dict -d fd-deu-eng'
