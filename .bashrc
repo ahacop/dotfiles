@@ -10,6 +10,7 @@ export PATH=$HOME/.fastlane/bin:$PATH
 export PATH=$JAVA_HOME/bin:$PATH
 export PATH=/usr/local/share/npm/bin:$PATH
 export PATH=/usr/local/heroku/bin:$PATH
+export PATH=$HOME/.local/bin:$PATH
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
 [[ -e /usr/local/opt/chruby/share/chruby/chruby.sh ]] && source /usr/local/opt/chruby/share/chruby/chruby.sh
