@@ -54,3 +54,4 @@ less_options=(
 export LESS="${less_options[*]}";
 unset less_options;
 export PAGER='less';
+export PATH="/usr/local/opt/postgresql@10/bin:$PATH"
