@@ -1,4 +1,6 @@
-alias vi='vim'
+alias vi='nvim'
+alias vim="nvim"
+alias vimdiff="nvim -d"
 alias ls='ls -GF'
 alias be='bundle exec'
 alias gc='git ci -p'
